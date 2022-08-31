@@ -6,7 +6,6 @@ let inputName = document.querySelector('.js-input-name');
 let inputLastName = document.querySelector('.js-input-lastname');
 let inputEmail = document.querySelector('.js-input-email');
 let inputPhone = document.querySelector('.js-input-phone');
-let textarea = document.querySelector('.js-input-textarea');
 let inputCheckbox = document.querySelector('.js-input-checkbox');
 
 
