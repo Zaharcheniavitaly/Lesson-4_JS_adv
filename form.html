@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<form class="js-form" action="">
+			<div class="form__group">
+				<label for="name">Введите Ваше имя</label>
+				<input type="text" class="input js-input js-input-name" name="name" placeholder="name">
+
+			</div>
+
+			<div class="form__group">
+				<label for="name">Введите Вашу фамилию</label>
+				<input type="text" class="input js-input js-input-lastname" name="Last name" placeholder="Last name">
+			</div><br>
+			<div class="form__group">
+				<label for="email">Введите Ваш email</label>
+				<input type="email" class="input js-input js-input-email" name="email" placeholder="Email">
+			</div>
+
+			<div class="form__group">
+				<label for="tel">Введите номер телефона</label>
+				<input type="tel" class="input js-input js-input-phone" name="phone" placeholder="Phone">
+			</div>
+			<div class="form__group">
+				<label for="text">Ваш комментарий</label>
+				<textarea class="input js-input js-input-textarea" name="comment" cols="40" rows="10"></textarea>
+			</div>
+
+
+			<div class="form__group">
+				<input type="checkbox" class="checkbox__input js-input-checkbox" id="privacy_check">
+				<label class="checkbox__label" for="privacy_check">Accept privacy policy</label>
+			</div>
+			<button class="btn" type="submit">Submit form</button>
+		</form>
+	</div>
+
+
+
+	<script src="form.js"></script>
+</body>
+
+</html>
