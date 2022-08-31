@@ -104,7 +104,7 @@ form.onsubmit = function () {
 
 
 
-// form.addEventListener('onsubmit', function (event) {
+// form.addEventListener('submit', function (event) {
 // 	event.preventDefault();
 // })
 
