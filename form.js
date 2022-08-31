@@ -31,8 +31,10 @@ function validatePhone(phone) {
 }
 
 
-form.addEventListener('onsubmit', function (event) {
-	event.preventDefault();
+
+
+form.onsubmit = function () {
+
 
 	let nameVal = inputName.value;
 	let lastNameVal = inputLastName.value;
@@ -96,18 +98,14 @@ form.addEventListener('onsubmit', function (event) {
 		inputCheckbox.classList.remove('error');
 	}
 
-})
+
+};
 
 
 
-// можно вместо
 
 // form.addEventListener('onsubmit', function (event) {
 // 	event.preventDefault();
 // })
 
-// писать:
 
-// form.onsubmit = function () {
-
-// }
