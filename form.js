@@ -31,7 +31,8 @@ function validatePhone(phone) {
 }
 
 
-form.onsubmit = function () {
+form.addEventListener('onsubmit', function (event) {
+	event.preventDefault();
 
 	let nameVal = inputName.value;
 	let lastNameVal = inputLastName.value;
@@ -95,11 +96,18 @@ form.onsubmit = function () {
 		inputCheckbox.classList.remove('error');
 	}
 
-}
+})
 
-// form.addEventListener('submit', function (event) {
+
+
+// можно вместо
+
+// form.addEventListener('onsubmit', function (event) {
 // 	event.preventDefault();
-// 	console.log('jjhh');
-
-// 	return false;
 // })
+
+// писать:
+
+// form.onsubmit = function () {
+
+// }
