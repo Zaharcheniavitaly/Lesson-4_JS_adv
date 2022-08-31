@@ -6,7 +6,6 @@ let inputName = document.querySelector('.js-input-name');
 let inputLastName = document.querySelector('.js-input-lastname');
 let inputEmail = document.querySelector('.js-input-email');
 let inputPhone = document.querySelector('.js-input-phone');
-let textarea = document.querySelector('.js-input-textarea');
 let inputCheckbox = document.querySelector('.js-input-checkbox');
 
 
@@ -32,7 +31,10 @@ function validatePhone(phone) {
 }
 
 
-form.onsubmit = function () {
+
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
 
 	let nameVal = inputName.value;
 	let lastNameVal = inputLastName.value;
@@ -96,11 +98,14 @@ form.onsubmit = function () {
 		inputCheckbox.classList.remove('error');
 	}
 
-}
+	window.open('https://gb.ru/', '_blank');
+});
 
-// form.addEventListener('submit', function (event) {
-// 	event.preventDefault();
-// 	console.log('jjhh');
 
-// 	return false;
-// })
+// или так!!!
+
+// form.onsubmit = function () {
+
+// }
+
+
